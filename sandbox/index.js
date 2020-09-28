@@ -22,10 +22,19 @@ function lsd() {
                 color = 'blue';
                 break;
             case "blue":
+                color = "green";
+                break;
+            case "green":
+                color = "yellow";
+                break;
+            case "yellow":
+                color = "purple";
+                break;
+            case "purple":
                 color = "red";
                 break;
             default:
-                color = 'blue';
+                color = 'red';
         }
         content.style.backgroundColor = color;
     }
@@ -35,4 +44,8 @@ document.getElementById("lsdButton").addEventListener("click", () => {
     lsdToggle = !lsdToggle;
 })
 
-setInterval(lsd,20);
+setInterval(lsd,50);
+
+document.addEventListener("keypress",(e)=>{
+    console.log(e);
+})
