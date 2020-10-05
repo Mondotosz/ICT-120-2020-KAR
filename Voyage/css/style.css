@@ -1,0 +1,39 @@
+.center {
+    margin: auto;
+    width: fit-content;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px
+}
+
+.nav-item {
+    padding: 0.5% 1.5%;
+    background: aliceblue;
+    border-radius: 10px;
+}
+
+.nav-selected {
+    background: lightskyblue;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 5vw;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2.5em;
+}
